@@ -27,10 +27,11 @@ int main(int argc, const char** argv) {
 }
 
 double cpp_ftoc(const char* str){//(32°F − 32) × 5/9 = 0°C
-	cout << str << endl << strtod(str, (char **) "\0") << endl;// print to the screen to make sure that the code outputs something
-	double temp = strtod(str, (char **)str );//try storing it in a variable to see if that works
-	cout << temp << endl;//print the variable
-	return temp;
+	cout << "input = "<<str << endl;
+	cout <<"conversion method = "<<strtod(str, (char **) "\0") << endl;// print to the screen to make sure that the code outputs something
+	/*double temp = strtod(str, (char **) "");//try storing it in a variable to see if that works
+	cout <<"temp = " <<temp << endl;*///print the variable
+	return 0;
 }
 
 double c_ctof(const char* str){//(0°C × 9/5) + 32 = 32°F
